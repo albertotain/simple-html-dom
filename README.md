@@ -7,9 +7,22 @@ You can install this plugin into your CakePHP application using [composer](https
 The recommended way to install composer packages is:
 
 ```
-composer require albertotain/SimpleHtmlDom
+composer require albertotain/simple-html-dom
 ```
 
 ## Cargar plugin
-bin/cake plugin load SimpleHtmlDom
+bin/cake plugin load simple-html-dom
+
+## Usar en controlador
+use SimpleHtmlDom\Controller;
+
+     public function suMetodo() {
+
+        // Create DOM from URL or file
+        $simpleHtml = new Controller\SimpleHtmlDomController;
+
+        $html = $simpleHtml->file_get_html('http://URL/');
+
+        dd($html);
+    }
 
