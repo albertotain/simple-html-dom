@@ -1,0 +1,25 @@
+{
+    "name": "albertotain/SimpleHtmlDom",
+    "description": "SimpleHtmlDom plugin for CakePHP 3",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp3" ],
+    "homepage": "https://github.com/albertotain/simpleDomParser/tree/master",
+    "license": "MIT",
+    "require": {
+        "cakephp/cakephp": "^3.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7.14|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleHtmlDom\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SimpleHtmlDom\\Test\\": "tests/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+        }
+    }
+}
